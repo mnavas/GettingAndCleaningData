@@ -54,3 +54,25 @@ For each record in the dataset it is provided:
     - Its activity label.
     - An identifier of the subject who carried out the experiment. 
 
+##Cleanup Data Activities
+
+Load data:
+This first step loads the raw data from the X_train.txt into the variable "train". The same for the data in the file "X_test.txt" with is loaded to the "test variable"
+
+Merge raw data:
+In this step both the data in the variables "train" and "test" are binded by row.
+
+Calculate mean and standard deviation:
+In this step the standard deviation and the mean for each of the measurements in the data is calculated. Note that for the homework each of the variables in the raw data set is considered one measurement.
+
+Load activity names:
+In this step the names of the activities are loaded from the file activity_labels.txt to later perfom appropriate labeling of activities with this "names" vector
+
+Load activity column:
+In this step the id of the activities measured are loaded into the "activity" vector variable.
+
+Label data with descriptive activity names:
+In this step the activity ids of activities are merged with the appropriate activity name in the "names" vector variable. The result is stored as the "y" vector variable.
+
+Create a tidy data set:
+The final step is to use the raw data and the "y" to generate a tidy dataset stored in the variable "tidy". The resulting data set stores the average of each variable for each activity and each subject. The data is organized as follows: each column represents an activity and each row a variable.
